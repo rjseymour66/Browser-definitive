@@ -1,0 +1,81 @@
+:root {
+    box-sizing: border-box;
+
+    --ff-font-primary: 'Roboto', sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-font-primary);
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.btn > * {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.btn > * + * {
+    margin-left: 2rem;
+}
+
+.btn--text {
+    background-color: blue;
+    color: #fff;
+}
+
+.btn--json {
+    background-color: green;
+    color: #fff;   
+}
+
+.btn--api {
+    background-color: goldenrod;
+    color: #000;   
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    border-top: 1px solid gray;
+}
+
+.inputs > * {
+    outline: gray;
+    text-indent: .5rem;
+    padding: .5rem 0;
+}
+
+.inputs > * + * {
+    margin-top: 1rem;
+}
+
+.submit {
+    display: inline-block;
+    margin: 1rem 0 2rem 0;
+    background-color: gray;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
